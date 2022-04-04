@@ -31,6 +31,7 @@
 	"editor.insertSpaces": false,
 	"editor.linkedEditing": true,
 	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.renderLineHighlight": "gutter",
 	"editor.suggestSelection": "first",
 	"editor.tabSize": 2,
 	"editor.wordWrap": "on",
