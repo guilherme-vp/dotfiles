@@ -1,56 +1,49 @@
 [user]
-	name = Guilherme Vieira
-	email = guivpw68@gmail.com
+name = Guilherme Vieira
+email = guivpw68@gmail.com
 
 [core]
-	editor = code
-	editor = code
+editor = code
 
 [credential]
-	helper = osxkeychain
-	UseHttpPath = true
-
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+helper = osxkeychain
+UseHttpPath = true
 
 [format]
-  pretty = %C(blue)%h%Creset %C(bold red)%d%Creset %s %C(cyan)<%an>%Creset %C(green)(%cr)%Creset
+pretty = '%C(blue)%h%Creset %C(bold red)%d%Creset %s %C(cyan)<%an>%Creset %C(green)(%cr)%Creset'
 
 [status]
-  short = true
-  branch = true
+short = true
+branch = true
 
 [alias]
-	alias = !git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
-	lg = log --pretty
-	s = status -sb
-	c = commit -m
-	d = diff
-	ll = log --stat --abbrev-commit
-	lg = log --color --graph --pretty --abbrev-commit --date=relative
-	llg = log --color --graph --pretty --abbrev-commit
-	rollback = reset --soft HEAD~1
-	edit = config --global --edit
-	count = shortlog
-	brename = !git branch -M
-	
+alias = !git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
+lg = log --pretty
+s = status -sb
+c = commit -m
+d = diff
+ll = log --stat --abbrev-commit
+lg = log --color --graph --pretty --abbrev-commit --date=relative
+llg = log --color --graph --pretty --abbrev-commit
+rollback = reset --soft HEAD~1
+edit = config --global --edit
+count = shortlog
+brename = !git branch -M
+
 [init]
-	defaultBranch = main
+defaultBranch = main
 
 [log]
-  decorate = auto
-  abbrevCommit = true
-  follow = true
+decorate = auto
+abbrevCommit = true
+follow = true
 
 [commit]
-  verbose = true
+verbose = true
 
 [push]
-  default = simple
-  followTags = true
+default = simple
+followTags = true
 
 [rebase]
-  autosquash = true
+autosquash = true
