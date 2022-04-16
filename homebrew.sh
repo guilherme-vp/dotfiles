@@ -58,8 +58,14 @@ echo 'installing docker'
 brew install --cask docker
 open -a Docker
 
+echo 'installing Golang'
+brew install go
+
 echo 'installing kubernetes'
 brew install kubectl
+
+echo 'installing kind (for kubernetes clusters) with Go'
+go install sigs.k8s.io/kind
 
 echo 'installing mysqlworkbench'
 brew install --cask mysqlworkbench
