@@ -70,9 +70,6 @@ go install sigs.k8s.io/kind
 echo 'installing mysqlworkbench'
 brew install --cask mysqlworkbench
 
-echo 'installing dbeaver'
-brew install --cask dbeaver
-
 echo 'installing aws-cli'
 curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
 sudo installer -pkg AWSCLIV2.pkg -target /
@@ -146,9 +143,9 @@ export NVM_DIR="$HOME/.nvm" && (
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
-nvm install 16.13.2
+nvm install 22
 nvm --version
-nvm alias default 16.13.2
+nvm alias default 22
 node --version
 npm --version
 
@@ -157,13 +154,6 @@ brew install yarn
 
 echo 'installing global npm packages'
 sh npm-dependencies.sh
-
-echo 'installing watchman'
-brew install watchman
-
-echo 'installing cocoapods'
-brew cleanup -d -v
-brew install cocoapods
 
 echo 'installing jdk11'
 brew install --cask adoptopenjdk/openjdk/adoptopenjdk11
