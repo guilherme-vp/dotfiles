@@ -27,8 +27,9 @@ read git_core_editor_to_code
 git config --global core.editor $git_core_editor_to_code
 clear
 
-echo 'installing git remote codecommit'
-pip install git-remote-codecommit
+echo 'installing Github cli'
+brew install gh
+gh auth login
 
 echo 'installing font tools'
 brew tap bramstein/webfonttools
@@ -86,9 +87,6 @@ brew install --cask microsoft-excel
 echo 'installing microsoft powerpoint'
 brew install --cask microsoft-powerpoint
 
-echo 'installing insomnia'
-brew install --cask insomnia
-
 echo 'installing postman'
 brew install --cask postman
 
@@ -105,7 +103,6 @@ echo 'installing VSCode extensions'
 sh ./vscode-extensions.sh
 
 echo 'installing fira code'
-brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
 
 echo 'installing zsh'
