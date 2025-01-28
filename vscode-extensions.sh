@@ -30,12 +30,11 @@ code --install-extension vivaxy.vscode-conventional-commits
 code --install-extension redhat.fabric8-analytics
 code --install-extension donjayamanne.githistory
 code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
-code --install-extension eg2.vscode-npm-script
 code --install-extension Prisma.prisma
-code --install-extension Prisma.prisma-insider
 code --install-extension WallabyJs.quokka-vscode
 code --install-extension ms-vscode-remote.remote-containers
 code --install-extension cssho.vscode-svgviewer
 code --install-extension Arjun.swagger-viewer
 code --install-extension uctakeoff.vscode-counter
 code --install-extension redhat.vscode-yaml
+code --install-extension biomejs.biome
