@@ -1,9 +1,7 @@
-yarn global add expo-cli \
-	autocannon \
-	create-react-app \
-	react-native-cli \
+npm -g install autocannon \
 	npm-check \
 	expo-cli \
+ 	eas-cli \
 	@nestjs/cli \
 	ntl \
 	@expo/ngrok \
